@@ -18,8 +18,7 @@ export default function Others({ setPage }) {
   return (
     <main className="others-page">
       <aside className="others-sidebar">
-        <img className="others-logo" src="/images/Rectangle.svg" alt="W Studio" />
-
+        <img className="others-logo" src="/images/Rectangle.svg" alt="W Studio" onClick={() => setPage("home")} />
         <nav className="others-menu">
           <button onClick={() => setPage("about")}>ABOUT</button>
           <button onClick={() => setPage("work")}>WORK</button>

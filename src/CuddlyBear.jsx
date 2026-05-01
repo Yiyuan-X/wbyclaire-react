@@ -13,8 +13,7 @@ export default function CuddlyBear({ setPage }) {
   return (
     <main className="bear-page">
       <aside className="bear-sidebar">
-        <img className="bear-logo" src="/images/Rectangle.svg" alt="W Studio" />
-
+        <img className="bear-logo" src="/images/Rectangle.svg" alt="W Studio" onClick={() => setPage("home")} />
         <nav className="bear-menu-card">
           <button onClick={() => setPage("about")}>ABOUT</button>
           <button onClick={() => setPage("work")}>WORK</button>

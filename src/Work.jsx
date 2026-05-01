@@ -12,8 +12,7 @@ export default function Work({ setPage }) {
   return (
     <main className="work-page">
       <aside className="work-sidebar">
-        <img className="work-logo" src="/images/Rectangle.svg" alt="W Studio" />
-
+      <img className="work-logo" src="/images/Rectangle.svg" alt="W Studio" onClick={() => setPage("home")} />
 <nav className="work-menu-card">
   <button onClick={() => setPage("about")}>ABOUT</button>
   <button className="nav-active" onClick={() => setPage("work")}>WORK</button>

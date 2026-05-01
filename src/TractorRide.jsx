@@ -13,8 +13,7 @@ export default function TractorRide({ setPage }) {
   return (
     <main className="tractor-page">
       <aside className="tractor-sidebar">
-        <img className="tractor-logo" src="/images/Rectangle.svg" alt="W Studio" />
-
+        <img className="tractor-logo" src="/images/Rectangle.svg" alt="W Studio" onClick={() => setPage("home")} />
         <nav className="tractor-menu-card">
           <button onClick={() => setPage("about")}>ABOUT</button>
           <button onClick={() => setPage("work")}>WORK</button>

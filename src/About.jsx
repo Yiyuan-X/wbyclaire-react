@@ -3,8 +3,13 @@ import "./App.css";
 export default function About({ setPage }) {
   return (
     <main className="about-page">
-      <aside className="about-sidebar">
-        <img className="about-logo" src="/images/Rectangle.svg" alt="W Studio" />
+          <aside className="about-sidebar">
+              <img
+                  className="about-logo"
+                  src="/images/Rectangle.svg"
+                  alt="W Studio"
+                  onClick={() => setPage("home")}
+              />
 
         <nav className="about-menu-card">
           <button className="nav-active" onClick={() => setPage("about")}>ABOUT</button>

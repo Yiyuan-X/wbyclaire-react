@@ -1,23 +1,26 @@
 import "./App.css";
 
-export default function Home({ goWork }) {
+export default function Home({ setPage }) {
   return (
     <main className="site-shell">
 
       <aside className="sidebar">
-        <img className="logo" src="/images/Rectangle.svg" alt="W Studio" />
-
-
-                <nav className="about-menu-card">
-                    <button className="nav-active" onClick={() => setPage("about")}>ABOUT</button>
-                    <button className="nav-active" onClick={() => setPage("work")}>WORK</button>
-                    <button className="nav-active" onClick={() => setPage("australiana")}>AUSTRALIANA</button>
-                    <button className="nav-active" onClick={() => setPage("tractor")}>TRACTOR RIDE</button>
-                    <button className="nav-active" onClick={() => setPage("bear")}>CUDDLY BEAR</button>
-                    <button className="nav-active" onClick={() => setPage("wonderland")}>WHIMSICAL WONDERLAND</button>
-                    <button className="nav-active" onClick={() => setPage("market")}>MINI MARKET</button>
-                    <button className="nav-active" onClick={() => setPage("others")}>OTHERS</button>
-                </nav>
+        <img
+          className="logo"
+          src="/images/Rectangle.svg"
+          alt="W Studio"
+          onClick={() => setPage("home")}
+        />
+        <nav className="menu-card">
+          <button onClick={() => setPage("about")}>ABOUT</button>
+          <button onClick={() => setPage("work")}>WORK</button>
+          <button onClick={() => setPage("australiana")}>AUSTRALIANA</button>
+          <button onClick={() => setPage("tractor")}>TRACTOR RIDE</button>
+          <button onClick={() => setPage("bear")}>CUDDLY BEAR</button>
+          <button onClick={() => setPage("wonderland")}>WHIMSICAL WONDERLAND</button>
+          <button onClick={() => setPage("market")}>MINI MARKET</button>
+          <button onClick={() => setPage("others")}>OTHERS</button>
+        </nav>
         <h1 className="headline">
           Art direction
           <br />& product

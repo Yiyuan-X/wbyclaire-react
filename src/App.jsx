@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Home from "./home";
 import About from "./About";
 import Work from "./Work";
 import Australiana from "./Australiana";
@@ -9,10 +10,11 @@ import MiniMarket from "./MiniMarket";
 import Others from "./Others";
 
 export default function App() {
-  const [page, setPage] = useState("about");
+  const [page, setPage] = useState("home");
 
   return (
     <>
+      {page === "home" && <Home setPage={setPage} />}
       {page === "about" && <About setPage={setPage} />}
       {page === "work" && <Work setPage={setPage} />}
       {page === "australiana" && <Australiana setPage={setPage} />}

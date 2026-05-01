@@ -14,7 +14,7 @@ export default function MiniMarket({ setPage }) {
     <main className="market-page">
       <aside className="market-sidebar">
         <img className="market-logo" src="/images/Rectangle.svg" alt="W Studio" />
-
+                <img className="australiana-logo" src="/images/Rectangle.svg" alt="W Studio" onClick={() => setPage("home")} />
         <nav className="market-menu-card">
           <button onClick={() => setPage("about")}>ABOUT</button>
           <button onClick={() => setPage("work")}>WORK</button>

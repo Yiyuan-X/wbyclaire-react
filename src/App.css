@@ -22,110 +22,79 @@ button {
 
 .site-shell {
   position: relative;
-  width: 1190px;
-  height: 895px;
+  width: 1440px;
+  height: 1024px;
   margin: 0 auto;
-  background: #f6f5f0;
-}
-
-.page-note {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  color: #c8c8c8;
+  background: #f6f6ef;
 }
 
 .sidebar {
   position: absolute;
-  left: 29px;
-  top: 23px;
-  width: 259px;
-  height: 830px;
+  left: 32px;
+  top: 21px;
+  width: 320px;
+  height: 980px;
 }
 
 .logo {
   position: absolute;
-  left: 12px;
-  top: -6px;
+  left: 23px;
+  top: 0;
   width: 56px;
   height: 56px;
+  cursor: pointer;
 }
 
 .menu-card {
   position: absolute;
   left: 0;
-  top: 55px;  
-  width: 259px;
-  height: 203px;
+  top: 67px;
+  width: 320px;
+  height: 252px;
   background: #fff;
-  padding: 22px 19px;
+  padding: 26px 23px;
 }
 
-/* 所有菜单 */
 .menu-card button {
+  display: block;
   font-family: Inter, sans-serif;
-  font-size: 13px;
-  line-height: 1.8;   /* 拉开呼吸感 */
+  font-size: 14px;
+  line-height: 1.55;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #3f3b36;
-  margin: 2px 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
 }
 
-/* ABOUT 单独 */
 .menu-card button:first-child {
-  margin-bottom: 18px;
-}
-
-/* WORK 标题 */
-.work-title {
-  margin-top: 4px;
-  margin-bottom: 6px;
-  font-size: 13px;
-  opacity: 0.7;
-}
-
-/* 子菜单（让层级更明显） */
-.menu-card button:not(:first-child):not(.work-title) {
-  padding-left: 2px;   /* 微缩进（关键细节） */
-}
-
-/* hover（高级感） */
-.menu-card button:hover {
-  color: #000;
-}
-
-.menu-card button:hover {
-  color: #000;
-}
-
-.work-title {
-  margin-top: 18px;
+  font-size: 15px;
+  margin-bottom: 22px;
 }
 
 .headline {
   position: absolute;
-  left: 19px;
-  top: 310px;
-  width: 235px;
+  left: 23px;
+  top: 345px;
+  width: 281px;
   margin: 0;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: 38px;
-  line-height: 1.35;
+  font-size: 44px;
+  line-height: 64px;
   font-weight: 500;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
   color: #3f3b36;
 }
 
 .footer {
   position: absolute;
-  left: 19px;
-  top: 785px;
+  left: 23px;
+  top: 940px;
   font-family: Inter, sans-serif;
-  font-size: 12px;
-  line-height: 1.6;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
   color: #3f3b36;
 }
 
@@ -134,12 +103,11 @@ button {
 }
 
 .hero {
-  top: 100px;
   position: absolute;
-  left: 314px;
-  top: 76px;
-  width: 828px;
-  height: 580px;
+  left: 384px;
+  top: 88px;
+  width: 1024px;
+  height: 716px;
   overflow: hidden;
 }
 
@@ -147,7 +115,6 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .work-page {
@@ -241,20 +208,23 @@ button {
   margin-bottom: 8px;
 }
 
+
+/* ===== Australiana 页面 ===== */
 .australiana-page {
   position: relative;
   width: 1440px;
-  min-height: 8028px;
+  min-height: auto;
   margin: 0 auto;
   background: #f6f6ef;
 }
 
+/* 左侧固定区 */
 .australiana-sidebar {
   position: absolute;
   left: 32px;
   top: 21px;
   width: 320px;
-  height: 7980px;
+  height: auto;
 }
 
 .australiana-logo {
@@ -263,6 +233,7 @@ button {
   top: 0;
   width: 56px;
   height: 56px;
+  cursor: pointer;
 }
 
 .australiana-menu-card {
@@ -289,29 +260,12 @@ button {
   margin-bottom: 22px;
 }
 
-.australiana-title {
-  position: absolute;
-  left: 23px;
-  top: 345px;
-  margin: 0;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 28px;
-  line-height: 1.45;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: #3f3b36;
-}
-
-.australiana-title span {
-  font-size: 18px;
-}
-
 .australiana-footer {
   position: absolute;
   left: 23px;
-  top: 7900px;
+  top: 5350px;
   font-family: Inter, sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.7;
   font-weight: 500;
   color: #3f3b36;
@@ -321,18 +275,72 @@ button {
   margin: 0;
 }
 
-.australiana-gallery {
+/* 右侧内容区 */
+.australiana-content {
   position: absolute;
   left: 384px;
-  top: 88px;
+  top: 0;
   width: 720px;
+}
+
+/* 顶部裁切图 */
+.australiana-cover-block {
+  position: relative;
+  width: 320px;
+  height: 235px;
+}
+
+.australiana-cover {
+  display: block;
+  width: 320px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.australiana-cover-caption {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  width: 130px;
+  height: 38px;
+  background: #fff;
+  padding: 8px 0 0 0;
+}
+
+.australiana-cover-caption p:first-child {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #3f3b36;
+}
+
+.australiana-cover-caption p:last-child {
+  margin: 4px 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #3f3b36;
+}
+
+/* 下面作品流 */
+.australiana-gallery {
+  position: absolute;
+  left: 136px;
+  top: 300px;
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .australiana-gallery img {
   display: block;
   width: 720px;
   height: auto;
-  margin-bottom: 8px;
 }
 
 
@@ -904,9 +912,34 @@ button {
 }
 
 .nav-active {
-  background: #eee8dc;
-  color: #3f3b36 !important;
-  padding: 3px 7px;
-  margin-left: -7px;
-  border-radius: 2px;
+  color: #9b8a63 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.logo,
+.about-logo,
+.work-logo,
+.australiana-logo,
+.tractor-logo,
+.bear-logo,
+.wonderland-logo,
+.market-logo,
+.others-logo {
+  cursor: pointer;
+}
+
+
+@media print {
+  @page {
+    size: 1440px 8028px;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }

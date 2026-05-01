@@ -13,11 +13,7 @@ export default function WhimsicalWonderland({ setPage }) {
   return (
     <main className="wonderland-page">
       <aside className="wonderland-sidebar">
-        <img
-          className="wonderland-logo"
-          src="/images/Rectangle.svg"
-          alt="W Studio"
-        />
+       <img className="wonderland-logo" src="/images/Rectangle.svg" alt="W Studio" onClick={() => setPage("home")} />
 
         <nav className="wonderland-menu-card">
           <button onClick={() => setPage("about")}>ABOUT</button>
