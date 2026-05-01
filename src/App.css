@@ -1,0 +1,912 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f5f0;
+}
+
+button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+}
+
+.site-shell {
+  position: relative;
+  width: 1190px;
+  height: 895px;
+  margin: 0 auto;
+  background: #f6f5f0;
+}
+
+.page-note {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  color: #c8c8c8;
+}
+
+.sidebar {
+  position: absolute;
+  left: 29px;
+  top: 23px;
+  width: 259px;
+  height: 830px;
+}
+
+.logo {
+  position: absolute;
+  left: 12px;
+  top: -6px;
+  width: 56px;
+  height: 56px;
+}
+
+.menu-card {
+  position: absolute;
+  left: 0;
+  top: 55px;  
+  width: 259px;
+  height: 203px;
+  background: #fff;
+  padding: 22px 19px;
+}
+
+/* 所有菜单 */
+.menu-card button {
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  line-height: 1.8;   /* 拉开呼吸感 */
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+  margin: 2px 0;
+}
+
+/* ABOUT 单独 */
+.menu-card button:first-child {
+  margin-bottom: 18px;
+}
+
+/* WORK 标题 */
+.work-title {
+  margin-top: 4px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+/* 子菜单（让层级更明显） */
+.menu-card button:not(:first-child):not(.work-title) {
+  padding-left: 2px;   /* 微缩进（关键细节） */
+}
+
+/* hover（高级感） */
+.menu-card button:hover {
+  color: #000;
+}
+
+.menu-card button:hover {
+  color: #000;
+}
+
+.work-title {
+  margin-top: 18px;
+}
+
+.headline {
+  position: absolute;
+  left: 19px;
+  top: 310px;
+  width: 235px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 38px;
+  line-height: 1.35;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #3f3b36;
+}
+
+.footer {
+  position: absolute;
+  left: 19px;
+  top: 785px;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #3f3b36;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.hero {
+  top: 100px;
+  position: absolute;
+  left: 314px;
+  top: 76px;
+  width: 828px;
+  height: 580px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.work-page {
+  position: relative;
+  width: 1440px;
+  min-height: 3540px;
+  margin: 0 auto;
+  background: #f6f6ef;
+}
+
+.work-sidebar {
+  position: absolute;
+  left: 32px;
+  top: 21px;
+  width: 320px;
+  height: 3500px;
+}
+
+.work-logo {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.work-menu-card {
+  position: absolute;
+  left: 0;
+  top: 67px;
+  width: 320px;
+  height: 252px;
+  background: #fff;
+  padding: 26px 23px;
+}
+
+.work-menu-card button {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.work-menu-card button:first-child {
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.work-heading {
+  position: absolute;
+  left: 23px;
+  top: 345px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 44px;
+  line-height: 64px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.work-footer {
+  position: absolute;
+  left: 23px;
+  top: 3457px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #3f3b36;
+}
+
+.work-footer p {
+  margin: 0;
+}
+
+.work-gallery {
+  position: absolute;
+  left: 384px;
+  top: 88px;
+  width: 1024px;
+}
+
+.work-gallery img {
+  display: block;
+  width: 1024px;
+  height: 640px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.australiana-page {
+  position: relative;
+  width: 1440px;
+  min-height: 8028px;
+  margin: 0 auto;
+  background: #f6f6ef;
+}
+
+.australiana-sidebar {
+  position: absolute;
+  left: 32px;
+  top: 21px;
+  width: 320px;
+  height: 7980px;
+}
+
+.australiana-logo {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.australiana-menu-card {
+  position: absolute;
+  left: 0;
+  top: 67px;
+  width: 320px;
+  height: 252px;
+  background: #fff;
+  padding: 26px 23px;
+}
+
+.australiana-menu-card button {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.australiana-menu-card button:first-child {
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.australiana-title {
+  position: absolute;
+  left: 23px;
+  top: 345px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 28px;
+  line-height: 1.45;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.australiana-title span {
+  font-size: 18px;
+}
+
+.australiana-footer {
+  position: absolute;
+  left: 23px;
+  top: 7900px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #3f3b36;
+}
+
+.australiana-footer p {
+  margin: 0;
+}
+
+.australiana-gallery {
+  position: absolute;
+  left: 384px;
+  top: 88px;
+  width: 720px;
+}
+
+.australiana-gallery img {
+  display: block;
+  width: 720px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+
+.about-page {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  background: #f6f6ef;
+}
+
+.about-sidebar {
+  position: absolute;
+  left: 32px;
+  top: 21px;
+  width: 320px;
+  height: 970px;
+}
+
+.about-logo {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.about-menu-card {
+  position: absolute;
+  left: 0;
+  top: 67px;
+  width: 320px;
+  height: 252px;
+  background: #fff;
+  padding: 26px 23px;
+}
+
+.about-menu-card button {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.about-menu-card button:first-child {
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.about-title {
+  position: absolute;
+  left: 23px;
+  top: 360px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 44px;
+  line-height: 1.35;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.about-footer {
+  position: absolute;
+  left: 23px;
+  top: 930px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #3f3b36;
+}
+
+.about-footer p {
+  margin: 0;
+}
+
+.about-content {
+  position: absolute;
+  left: 484px;
+  top: 88px;
+  width: 560px;
+  font-family: Inter, sans-serif;
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 500;
+  color: #000;
+}
+
+.about-content p {
+  margin: 0 0 28px;
+}
+
+.about-content a {
+  color: #879482;
+  text-decoration: underline;
+}
+
+.tractor-page {
+  position: relative;
+  width: 1440px;
+  min-height: 4140px;
+  margin: 0 auto;
+  background: #f6f6ef;
+}
+
+.tractor-sidebar {
+  position: absolute;
+  left: 32px;
+  top: 21px;
+  width: 320px;
+  height: 4100px;
+}
+
+.tractor-logo {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.tractor-menu-card {
+  position: absolute;
+  left: 0;
+  top: 67px;
+  width: 320px;
+  height: 252px;
+  background: #fff;
+  padding: 26px 23px;
+}
+
+.tractor-menu-card button {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.tractor-menu-card button:first-child {
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.tractor-title {
+  position: absolute;
+  left: 23px;
+  top: 345px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 44px;
+  line-height: 64px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.tractor-title span {
+  font-size: 30px;
+}
+
+.tractor-footer {
+  position: absolute;
+  left: 23px;
+  top: 4070px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #3f3b36;
+}
+
+.tractor-footer p {
+  margin: 0;
+}
+
+.tractor-gallery {
+  position: absolute;
+  left: 384px;
+  top: 88px;
+  width: 1024px;
+}
+
+.tractor-gallery img {
+  display: block;
+  width: 1024px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.bear-page {
+  position: relative;
+  width: 1440px;
+  min-height: 4140px;
+  margin: 0 auto;
+  background: #f6f6ef;
+}
+
+.bear-sidebar {
+  position: absolute;
+  left: 32px;
+  top: 21px;
+  width: 320px;
+  height: 4100px;
+}
+
+.bear-logo {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.bear-menu-card {
+  position: absolute;
+  left: 0;
+  top: 67px;
+  width: 320px;
+  height: 252px;
+  background: #fff;
+  padding: 26px 23px;
+}
+
+.bear-menu-card button {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.bear-menu-card button:first-child {
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.bear-title {
+  position: absolute;
+  left: 23px;
+  top: 345px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 44px;
+  line-height: 64px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.bear-title span {
+  font-size: 30px;
+}
+
+.bear-footer {
+  position: absolute;
+  left: 23px;
+  top: 4070px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #3f3b36;
+}
+
+.bear-footer p {
+  margin: 0;
+}
+
+.bear-gallery {
+  position: absolute;
+  left: 384px;
+  top: 88px;
+  width: 1024px;
+}
+
+.bear-gallery img {
+  display: block;
+  width: 1024px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.wonderland-page {
+  position: relative;
+  width: 1440px;
+  min-height: 4140px;
+  margin: 0 auto;
+  background: #f6f6ef;
+}
+
+.wonderland-sidebar {
+  position: absolute;
+  left: 32px;
+  top: 21px;
+  width: 320px;
+  height: 4100px;
+}
+
+.wonderland-logo {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.wonderland-menu-card {
+  position: absolute;
+  left: 0;
+  top: 67px;
+  width: 320px;
+  height: 252px;
+  background: #fff;
+  padding: 26px 23px;
+}
+
+.wonderland-menu-card button {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.wonderland-menu-card button:first-child {
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.wonderland-title {
+  position: absolute;
+  left: 23px;
+  top: 345px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 44px;
+  line-height: 64px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.wonderland-title span {
+  font-size: 30px;
+}
+
+.wonderland-footer {
+  position: absolute;
+  left: 23px;
+  top: 4070px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #3f3b36;
+}
+
+.wonderland-footer p {
+  margin: 0;
+}
+
+.wonderland-gallery {
+  position: absolute;
+  left: 384px;
+  top: 88px;
+  width: 1024px;
+}
+
+.wonderland-gallery img {
+  display: block;
+  width: 1024px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.market-page {
+  position: relative;
+  width: 1440px;
+  min-height: 4836px;
+  margin: 0 auto;
+  background: #f6f6ef;
+}
+
+.market-sidebar {
+  position: absolute;
+  left: 32px;
+  top: 21px;
+  width: 320px;
+  height: 4800px;
+}
+
+.market-logo {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.market-menu-card {
+  position: absolute;
+  left: 0;
+  top: 67px;
+  width: 320px;
+  height: 252px;
+  background: #fff;
+  padding: 26px 23px;
+}
+
+.market-menu-card button {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.market-menu-card button:first-child {
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.market-title {
+  position: absolute;
+  left: 23px;
+  top: 345px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 44px;
+  line-height: 64px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.market-title span {
+  font-size: 30px;
+}
+
+.market-footer {
+  position: absolute;
+  left: 23px;
+  top: 4760px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #3f3b36;
+}
+
+.market-footer p {
+  margin: 0;
+}
+
+.market-gallery {
+  position: absolute;
+  left: 384px;
+  top: 88px;
+  width: 1024px;
+}
+
+.market-gallery img {
+  display: block;
+  width: 1024px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.others-page {
+  position: relative;
+  width: 1440px;
+  min-height: 7428px;
+  margin: 0 auto;
+  background: #f6f6ef;
+}
+
+.others-sidebar {
+  position: absolute;
+  left: 32px;
+  top: 21px;
+  width: 320px;
+  height: 7380px;
+}
+
+.others-logo {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.others-menu {
+  position: absolute;
+  left: 0;
+  top: 67px;
+  width: 320px;
+  height: 252px;
+  background: #fff;
+  padding: 26px 23px;
+}
+
+.others-menu button {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.others-menu button:first-child {
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+.others-title {
+  position: absolute;
+  left: 23px;
+  top: 345px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 44px;
+  line-height: 64px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.others-title span {
+  font-size: 30px;
+}
+
+.others-footer {
+  position: absolute;
+  left: 23px;
+  top: 7350px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: #3f3b36;
+}
+
+.others-footer p {
+  margin: 0;
+}
+
+.others-content {
+  position: absolute;
+  left: 384px;
+  top: 88px;
+  width: 1024px;
+}
+
+.others-content img {
+  display: block;
+  width: 1024px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.nav-active {
+  background: #eee8dc;
+  color: #3f3b36 !important;
+  padding: 3px 7px;
+  margin-left: -7px;
+  border-radius: 2px;
+}
