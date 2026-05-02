@@ -1,6 +1,7 @@
 import "./App.css";
 
 const images = [
+  "Work1.jpg",
   "Work2.jpg",
   "Work3.jpg",
   "Work4.jpg",
@@ -29,7 +30,9 @@ export default function Australiana({ setPage }) {
         <nav className="australiana-menu-card">
           <button onClick={() => setPage("about")}>ABOUT</button>
           <button onClick={() => setPage("work")}>WORK</button>
-          <button className="nav-active">AUSTRALIANA</button>
+          <button className="nav-active" onClick={() => setPage("australiana")}>
+            AUSTRALIANA
+          </button>
           <button onClick={() => setPage("tractor")}>TRACTOR RIDE</button>
           <button onClick={() => setPage("bear")}>CUDDLY BEAR</button>
           <button onClick={() => setPage("wonderland")}>
@@ -37,7 +40,15 @@ export default function Australiana({ setPage }) {
           </button>
           <button onClick={() => setPage("market")}>MINI MARKET</button>
           <button onClick={() => setPage("others")}>OTHERS</button>
+
         </nav>
+
+        {/* ✅ 加上标题（关键差异） */}
+        <h1 className="australiana-title">
+          Australiana
+          <br />
+          <span>2025</span>
+        </h1>
 
         <footer className="australiana-footer">
           <p>Privacy Policy</p>
@@ -45,27 +56,11 @@ export default function Australiana({ setPage }) {
         </footer>
       </aside>
 
-      {/* 右侧内容 */}
-      <section className="australiana-content">
-        {/* Work1（顶部裁切图 + 左侧标题块） */}
-        <div className="australiana-cover-block">
-          <img
-            className="australiana-cover"
-            src="/images/Work1_1.jpg"
-            alt="Australiana"
-          />
-          <div className="australiana-cover-caption">
-            <p>Australiana</p>
-            <p>2025</p>
-          </div>
-        </div>
-
-        {/* 其余图片 */}
-        <div className="australiana-gallery">
-          {images.map((name) => (
-            <img key={name} src={`/images/${name}`} alt={name} />
-          ))}
-        </div>
+      {/* ✅ 右侧直接 gallery（和 tractor 一样） */}
+      <section className="australiana-gallery">
+        {images.map((name) => (
+          <img key={name} src={`/images/${name}`} alt={name} />
+        ))}
       </section>
     </main>
   );

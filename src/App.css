@@ -209,22 +209,21 @@ button {
 }
 
 
-/* ===== Australiana 页面 ===== */
+/* ===== Australiana 页面：与 Tractor Ride 格式一致 ===== */
 .australiana-page {
   position: relative;
   width: 1440px;
-  min-height: auto;
+  min-height: 8028px;
   margin: 0 auto;
   background: #f6f6ef;
 }
 
-/* 左侧固定区 */
 .australiana-sidebar {
   position: absolute;
   left: 32px;
   top: 21px;
   width: 320px;
-  height: auto;
+  height: 7980px;
 }
 
 .australiana-logo {
@@ -260,12 +259,29 @@ button {
   margin-bottom: 22px;
 }
 
+.australiana-title {
+  position: absolute;
+  left: 23px;
+  top: 345px;   
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 44px;
+  line-height: 64px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #3f3b36;
+}
+
+.australiana-title span {
+  font-size: 30px;
+}
+
 .australiana-footer {
   position: absolute;
   left: 23px;
-  top: 5350px;
+  top: 7950px;
   font-family: Inter, sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.7;
   font-weight: 500;
   color: #3f3b36;
@@ -275,74 +291,19 @@ button {
   margin: 0;
 }
 
-/* 右侧内容区 */
-.australiana-content {
-  position: absolute;
-  left: 384px;
-  top: 0;
-  width: 720px;
-}
-
-/* 顶部裁切图 */
-.australiana-cover-block {
-  position: relative;
-  width: 320px;
-  height: 235px;
-}
-
-.australiana-cover {
-  display: block;
-  width: 320px;
-  height: 150px;
-  object-fit: cover;
-  object-position: center bottom;
-}
-
-.australiana-cover-caption {
-  position: absolute;
-  left: 0;
-  top: 150px;
-  width: 130px;
-  height: 38px;
-  background: #fff;
-  padding: 8px 0 0 0;
-}
-
-.australiana-cover-caption p:first-child {
-  margin: 0;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 500;
-  color: #3f3b36;
-}
-
-.australiana-cover-caption p:last-child {
-  margin: 4px 0 0;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
-  color: #3f3b36;
-}
-
-/* 下面作品流 */
 .australiana-gallery {
   position: absolute;
-  left: 136px;
-  top: 300px;
-  width: 720px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  left: 384px;
+  top: 88px;
+  width: 1024px;
 }
 
 .australiana-gallery img {
   display: block;
-  width: 720px;
+  width: 1024px;
   height: auto;
+  margin-bottom: 8px;
 }
-
 
 .about-page {
   position: relative;
@@ -923,7 +884,6 @@ button {
   color: #9b8a63 !important;
   background: transparent !important;
   padding: 0 !important;
-  margin: 0 !important;
 }
 
 .logo,
