@@ -2,8 +2,9 @@ import "./App.css";
 
 const images = [
   "Work38.jpg",
-  "Work2.jpg",
+
   "Work40.jpg",
+  "Work2.jpg",
   "Work39.jpg",
   "Work41.jpg",
   "Work42.jpg",
